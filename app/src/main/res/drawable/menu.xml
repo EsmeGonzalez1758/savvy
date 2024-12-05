@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="20dp" />
+            <solid android:color="#80BAF3" /> <!-- Color de fondo actualizado -->
+        </shape>
+    </item>
+
+    <item android:top="3dp" android:left="3dp" android:right="3dp" android:bottom="3dp">
+        <shape>
+            <solid android:color="#80BAF3" /> <!-- Color del relleno -->
+            <stroke
+                android:width="3dp"
+                android:color="#80BAF3" /> <!-- Color del borde -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</layer-list>

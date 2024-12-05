@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#494CA2</color>\
+    <color name="bluec">#A3A8E2</color>\
+    <color name="red">#982649</color>\
+    <color name="bluecl">#82A3A8E2</color>\
+    <color name="blueD">#332F8C</color>\
+    <color name="circulo1">#8484D3</color>\
+    <color name="circulo2">#C8C5F9</color>\
+    <color name="circulo3">#635EC3</color>\
+    <color name="bluecla">#C6CBEF</color>
+    <color name="seccion">#FCF3F7</color>
+    <color name="contenido">#FBE8F1</color>
+    <color name="perfil">#F9D1E4</color>
+    <color name="apartados">#F5ACCD</color>
+    <color name="temas">#ED79AB</color>
+    <color name="examen">#E14181</color>
+
+</resources>

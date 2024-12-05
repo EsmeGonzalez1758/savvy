@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".registroActivity">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa los datos solicitados para completar tu registro.Asegurate de propocionar la informacion correcta y leer cuidadosamente cada campo"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bluecl"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/bluec"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <EditText
+                    android:id="@+id/txt_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:paddingStart="16dp"
+                    android:paddingLeft="16dp"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Nombre(s)"
+                    android:inputType="text|textPersonName"
+                    android:textColor="@color/black"
+                    android:hintTextColor="@color/gray"
+                    android:backgroundTint="@color/white"
+                    />
+
+                <EditText
+                    android:id="@+id/txtapellidop"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:paddingStart="16dp"
+                    android:paddingLeft="16dp"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Apellido Paterno"
+                    android:inputType="text|textPersonName"
+                    android:textColor="@color/black"
+                    android:hintTextColor="@color/gray"
+                    android:backgroundTint="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtapellidom"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:paddingStart="16dp"
+                    android:paddingLeft="16dp"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Apellido Materno"
+                    android:inputType="text|textPersonName"
+                    android:textColor="@color/black"
+                    android:hintTextColor="@color/gray"
+                    android:backgroundTint="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtcorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:paddingStart="16dp"
+                    android:paddingLeft="16dp"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Correo Electronico"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:hintTextColor="@color/gray"
+                    android:backgroundTint="@color/white"  />
+
+                <EditText
+                    android:id="@+id/txtclave"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:paddingStart="16dp"
+                    android:paddingLeft="16dp"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:hintTextColor="@color/gray"
+                    android:backgroundTint="@color/white" />
+
+
+                <Button
+                    android:id="@+id/btnregistrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/red"
+                    android:text="Registrarse"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -17,5 +17,6 @@
     <color name="apartados">#F5ACCD</color>
     <color name="temas">#ED79AB</color>
     <color name="examen">#E14181</color>
-
+    <color name="menu">#80BAF3</color>
+    
 </resources>

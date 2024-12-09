@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#f5accd" /> <!-- Color negro translúcido para la sombra -->
+            <corners android:radius="500dp" /> <!-- Esquinas redondeadas como el círculo -->
+        </shape>
+    </item>
+
+    <item android:left="5dp" android:top="5dp" > <!-- Desplazamiento de la sombra -->
+        <shape>
+            <solid android:color="#FBE8F1" /> <!-- Color rosa del círculo -->
+            <corners android:radius="500dp" /> <!-- Esquinas redondeadas -->
+        </shape>
+    </item>
+</layer-list>

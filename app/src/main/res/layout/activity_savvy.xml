@@ -1,423 +1,549 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
+    android:layout_height="wrap_content"
     android:background="@color/blue"
-    tools:context=".MainActivity">
+    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/Textsavvy"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="  ¡Hola!
-                        Soy SAVVY"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="match_parent">
 
-    <!-- Sección 1 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/seccion"
-        android:padding="16dp"
-        android:layout_marginBottom="20dp">
 
-        <!-- Contenedor horizontal para el círculo con el número -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
+            android:orientation="vertical">
 
-            <!-- Círculo con el número -->
-            <TextView
-                android:id="@+id/circunum"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/opcion1"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/secciones"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="60dp"
-                android:text="Secciones"
-                android:textColor="@android:color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <!-- Información principal centrada -->
-        <TextView
-            android:id="@+id/section_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pantalla principal: En esta sección, podrás acceder a cualquiera de los dos módulos disponibles. Solo necesitas hacer clic en el título de cada módulo para ingresar."
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
-
-        <TextView
-            android:id="@+id/section_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="También encontrarás tres secciones adicionales: Contenido Extra, Perfil y Sobre SAVVY."
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
-
-        <!-- Contenedor horizontal para íconos e imagen -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp">
-
-            <!-- Contenedor vertical de íconos e información -->
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/backArrow"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
 
-                <!-- Ícono: Contenido Extra -->
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <!-- Texto Hola y SAVVY -->
+                <TextView
+                    android:id="@+id/Textsavvy"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="8dp">
+                    android:layout_toEndOf="@id/backArrow"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:text="¡Hola!\nSoy SAVVY"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/context"
-                        android:contentDescription="Icono Contenido Extra"
-                        android:layout_marginEnd="8dp" />
+                <ImageView
+                    android:id="@+id/robotImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/robot_image" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Contenido Extra"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/black" />
-                </LinearLayout>
-
-                <!-- Ícono: Perfil -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="8dp">
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/perfil"
-                        android:contentDescription="Icono Perfil"
-                        android:layout_marginEnd="8dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Perfil"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:textColor="@android:color/black" />
-                </LinearLayout>
-
-                <!-- Ícono: Sobre SAVVY -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/savvy_info"
-                        android:contentDescription="Icono Sobre SAVVY"
-                        android:layout_marginEnd="8dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sobre SAVVY"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:textColor="@android:color/black" />
-                </LinearLayout>
             </LinearLayout>
 
-            <!-- Imagen del dispositivo -->
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/imagen_dispositivo"
-                android:contentDescription="Imagen dispositivo"
-                android:layout_marginStart="16dp"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <!-- Sección 2 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/contenido"
-        android:padding="16dp"
-        android:layout_marginBottom="20dp">
-
-        <!-- Contenedor horizontal para el círculo con el número y el título -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
-
-            <!-- Círculo con el número -->
-            <TextView
-                android:id="@+id/circunum2"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/opcion1"
-                android:gravity="center"
-                android:text="2"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <!-- Título principal -->
-            <TextView
-                android:id="@+id/contenido"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="Contenido de apoyo"
-                android:textColor="@android:color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:background="@drawable/seccion"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/circunum"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/opcion1"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/secciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="60dp"
+                        android:text="Secciones"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/section_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pantalla principal: En esta sección, podrás acceder a cualquiera de los dos módulos disponibles. Solo necesitas hacer clic en el título de cada módulo para ingresar."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/section_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="También encontrarás tres secciones adicionales: Contenido Extra, Perfil y Sobre SAVVY."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <!-- Contenedor horizontal para íconos e imagen -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+
+                    <!-- Contenedor vertical de íconos e información -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!-- Ícono: Contenido Extra -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/context"
+                                android:contentDescription="Icono Contenido Extra"
+                                android:layout_marginEnd="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Contenido Extra"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+
+                        <!-- Ícono: Perfil -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/perfil"
+                                android:contentDescription="Icono Perfil"
+                                android:layout_marginEnd="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Perfil"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+
+                        <!-- Ícono: Sobre SAVVY -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/savvy_info"
+                                android:contentDescription="Icono Sobre SAVVY"
+                                android:layout_marginEnd="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sobre SAVVY"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Imagen del dispositivo -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imagen_dispositivo"
+                        android:contentDescription="Imagen dispositivo"
+                        android:layout_marginStart="16dp"
+                        android:scaleType="fitCenter" />
+            </LinearLayout>
+
+
+
         </LinearLayout>
 
-        <!-- Información principal centrada -->
-        <TextView
-            android:id="@+id/contenido_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="En esta sección, podrás acceder a contenido externo a la aplicación que te ayudará a complementar la información y mejorar tu comprensión de los temas."
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
-
-        <TextView
-            android:id="@+id/contenido_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="En esta sección, solo tendrás la opción de regresar mediante un botón con el mismo nombre, así como acceder a los enlaces disponibles."
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
-
-        <!-- Imagen centrada al final -->
-        <ImageView
-            android:id="@+id/imagen_centrada"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:contentDescription="Imagen centrada del dispositivo"
-            android:scaleType="fitCenter"
-            android:src="@drawable/imagen_dispositivo" />
-    </LinearLayout>
-
-    <!-- Sección 3 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/usuario"
-        android:padding="16dp"
-        android:layout_marginBottom="20dp">
-
-        <!-- Contenedor horizontal para el círculo con el número y el título -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
-
-            <!-- Círculo con el número -->
-            <TextView
-                android:id="@+id/circunum3"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/opcion1"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <!-- Título principal -->
-            <TextView
-                android:id="@+id/perfil"
-                android:layout_width="wrap_content"
+            <!-- Sección 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="Perfil"
-                android:textColor="@android:color/black"
-                android:textSize="24sp"
+                android:orientation="vertical"
+                android:background="@drawable/contenido"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Contenedor horizontal para el círculo con el número y el título -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Círculo con el número -->
+                    <TextView
+                        android:id="@+id/circunum2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/opcion2"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Título principal -->
+                    <TextView
+                        android:id="@+id/contenido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Contenido de apoyo"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Información principal centrada -->
+                <TextView
+                    android:id="@+id/contenido_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En esta sección, podrás acceder a contenido externo a la aplicación que te ayudará a complementar la información y mejorar tu comprensión de los temas."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/contenido_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En esta sección, solo tendrás la opción de regresar mediante un botón con el mismo nombre, así como acceder a los enlaces disponibles."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <!-- Imagen centrada al final -->
+                <ImageView
+                    android:id="@+id/imagen_centrada"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Imagen centrada del dispositivo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/imagen_dispositivo" />
+            </LinearLayout>
+
+            <!-- Sección 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/usuario"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Contenedor horizontal para el círculo con el número y el título -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Círculo con el número -->
+                    <TextView
+                        android:id="@+id/circunum3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/opcion3"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/examen"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Título principal -->
+                    <TextView
+                        android:id="@+id/perfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:text="Perfil"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Información principal centrada -->
+                <TextView
+                    android:id="@+id/perfil_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En esta sección, podrás acceder a tu información personal, como tu nombre y correo electrónico. Esto te permitirá tener una identificación clara dentro de la aplicación y también facilitará la comunicación con tus profesores."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/perfil_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="De igual manera, en la parte inferior, se encontrara el boton de cerrar sesión."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center" />
+
+                <!-- Imagen centrada al final -->
+                <ImageView
+                    android:id="@+id/imagen_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Imagen centrada del dispositivo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/imagen_dispositivo" />
+            </LinearLayout>
+
+            <!-- Sección 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/contapart"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Círculo con el número -->
+                    <TextView
+                        android:id="@+id/circunum4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/opcion4"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/examen"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Título principal -->
+                    <TextView
+                        android:id="@+id/contapart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Contenido de Apartados"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/section_description_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Al seleccionar uno de los dos apartados, podrás acceder al contenido de cada uno. Además, en esta sección encontrarás un examen final que te permitirá evaluar los conocimientos adquiridos a lo largo de cada módulo."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+
+                <ImageView
+                    android:id="@+id/imagen_4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Imagen centrada del dispositivo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/imagen_dispositivo" />
+            </LinearLayout>
+
+            <!-- Sección 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/tema"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Círculo con el número -->
+                    <TextView
+                        android:id="@+id/circunum5"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/opcion5"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@color/examen"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Título principal -->
+                    <TextView
+                        android:id="@+id/contemas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Contenido de Temas"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/section_description_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Al acceder a un apartado de la materia, verás los temas correspondientes. Junto a cada uno, encontrarás una flecha hacia abajo. Al hacer clic en esa flecha, se desplegarán las secciones de Concepto, Práctica y Actividades. Podrás ingresar a la sección que necesites seleccionando la opción deseada."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+                <ImageView
+                    android:id="@+id/imagen_5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Imagen centrada del dispositivo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/imagen_dispositivo" />
+
+            </LinearLayout>
+
+            <!-- Sección 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/examen"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Círculo con el número -->
+                    <TextView
+                        android:id="@+id/circunum6"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/opcion6"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/examen"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Título principal -->
+                    <TextView
+                        android:id="@+id/examen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="76dp"
+                        android:text="Examen"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/section_description_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Al acceder al apartado de Evaluación Final, encontrarás un examen general que cubre todo el contenido del curso. Esta sección tiene un límite de tiempo de 1 hora, por lo que es importante que leas con atención y determinación para poder responder correctamente a todas las preguntas dentro del plazo establecido."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+                <ImageView
+                    android:id="@+id/imagen_6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Imagen centrada del dispositivo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/imagen_dispositivo" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/Textinfor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="¿Qué te parecio? Espero poder ayudarte en tu camino. Diviértete en esta gran meta."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
                 android:textStyle="bold" />
+
         </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
 
-        <!-- Información principal centrada -->
-        <TextView
-            android:id="@+id/perfil_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="En esta sección, podrás acceder a tu información personal, como tu nombre y correo electrónico. Esto te permitirá tener una identificación clara dentro de la aplicación y también facilitará la comunicación con tus profesores."
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
-
-        <TextView
-            android:id="@+id/perfil_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="De igual manera, en la parte inferior, se encontrara el boton de cerrar sesión."
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
-
-        <!-- Imagen centrada al final -->
-        <ImageView
-            android:id="@+id/imagen_3"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:contentDescription="Imagen centrada del dispositivo"
-            android:scaleType="fitCenter"
-            android:src="@drawable/imagen_dispositivo" />
-    </LinearLayout>
-
-    <!-- Sección 4 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/contapart"
-        android:padding="16dp"
-        android:layout_marginBottom="20dp">
-
-        <TextView
-            android:id="@+id/section_title_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4. Sección 4"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/section_description_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descripción de la sección 4"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp" />
-    </LinearLayout>
-
-    <!-- Sección 5 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/tema"
-        android:padding="16dp"
-        android:layout_marginBottom="20dp">
-
-        <TextView
-            android:id="@+id/section_title_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5. Sección 5"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/section_description_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descripción de la sección 5"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp" />
-    </LinearLayout>
-
-    <!-- Sección 6 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/examen"
-        android:padding="16dp"
-        android:layout_marginBottom="20dp">
-
-        <TextView
-            android:id="@+id/section_title_6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6. Sección 6"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/section_description_6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descripción de la sección 6"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/Textinfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="  ¿Qué te parecio? Espero poder ayudarte en tu camino.Diviertete en esta gran meta."
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:textStyle="bold" />
-
-</LinearLayout>

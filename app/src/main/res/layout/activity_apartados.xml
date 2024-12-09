@@ -103,7 +103,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="45dp">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/iconLeft"
             android:layout_width="0dp"
             android:layout_height="70dp"
@@ -112,7 +112,7 @@
             android:contentDescription="Left Icon"
             android:layout_gravity="center"/>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/iconCenter"
             android:layout_width="0dp"
             android:layout_height="70dp"
@@ -121,14 +121,15 @@
             android:contentDescription="Center Icon"
             android:layout_gravity="center"/>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/iconRight"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/savvy_info"
             android:contentDescription="Right Icon"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@color/menu"/>
     </LinearLayout>
 
     <ImageView

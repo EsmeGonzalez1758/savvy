@@ -53,8 +53,8 @@
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:src="@drawable/circle_shape2"
-        tools:layout_editor_absoluteX="-131dp"
-        tools:layout_editor_absoluteY="652dp" />
+        tools:layout_editor_absoluteX="-135dp"
+        tools:layout_editor_absoluteY="358dp" />
 
     <ImageView
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,8 +65,8 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:src="@drawable/circle_shape3"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="756dp" />
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="-42dp" />
 
     <ImageView
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,8 +77,8 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:src="@drawable/circle_shape3"
-        tools:layout_editor_absoluteX="-44dp"
-        tools:layout_editor_absoluteY="740dp" />
+        tools:layout_editor_absoluteX="-73dp"
+        tools:layout_editor_absoluteY="426dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

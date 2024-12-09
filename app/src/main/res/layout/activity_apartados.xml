@@ -93,8 +93,8 @@
 
     <LinearLayout
         android:id="@+id/menu"
-        android:layout_width="370dp"
-        android:layout_height="80dp"
+        android:layout_width="371dp"
+        android:layout_height="60dp"
         android:background="@drawable/menu"
         android:orientation="horizontal"
         android:padding="8dp"
@@ -105,25 +105,27 @@
 
         <ImageButton
             android:id="@+id/iconLeft"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_width="371dp"
+            android:layout_height="55dp"
             android:layout_weight="1"
             android:src="@drawable/context"
             android:contentDescription="Left Icon"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@color/menu"/>
 
         <ImageButton
             android:id="@+id/iconCenter"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_width="371dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/perfil"
             android:contentDescription="Center Icon"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@color/menu"/>
 
         <ImageButton
             android:id="@+id/iconRight"
-            android:layout_width="0dp"
+            android:layout_width="371dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/savvy_info"

@@ -1,10 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/text"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/despegable"
     android:gravity="center"
     android:orientation="vertical">
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="374dp"
+        android:layout_height="374dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape1"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="-123dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="374dp"
+        android:layout_height="374dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape1"
+        tools:layout_editor_absoluteX="-184dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape2"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="-88dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape2"
+        tools:layout_editor_absoluteX="-131dp"
+        tools:layout_editor_absoluteY="652dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape3"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="756dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape3"
+        tools:layout_editor_absoluteX="-44dp"
+        tools:layout_editor_absoluteY="740dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

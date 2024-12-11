@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <!-- Parte introductoria de Aire Acondicionado (Video)-->
+
+    <RelativeLayout
+        android:layout_width="305dp"
+        android:layout_height="213dp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="90dp"
+        tools:ignore="MissingConstraints"
+        >
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="305dp"
+            android:layout_height="213dp" />
+    </RelativeLayout>
+
+    <!--Titulo "Aire acondicionado-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AIRE"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACONDICIONADO"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <!--Objetivos del modulo-->
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="272dp"
+        android:background="@drawable/rectangulo1"
+        android:elevation="15dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="438dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="28dp"
+            android:text="Objetivo de aire acondicionado"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="225dp"
+            android:layout_height="127dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Calcula y evaluar los diferentes
+procesos psicométricos mediante el
+uso de tablas y monogramas para
+determinar las condiciones y
+propiedades del aire para cualquier
+ aplicación."
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="109dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            app:cornerRadius="20dp"
+            android:text="Empezar"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="371dp"
+        android:layout_height="60dp"
+        android:background="@drawable/menu"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="45dp">
+
+        <ImageButton
+            android:id="@+id/iconLeft"
+            android:layout_width="371dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:src="@drawable/context"
+            android:contentDescription="Left Icon"
+            android:layout_gravity="center"
+            android:background="@color/menu"/>
+
+        <ImageButton
+            android:id="@+id/iconCenter"
+            android:layout_width="371dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/perfil"
+            android:contentDescription="Center Icon"
+            android:layout_gravity="center"
+            android:background="@color/menu"/>
+
+        <ImageButton
+            android:id="@+id/iconRight"
+            android:layout_width="371dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/savvy_info"
+            android:contentDescription="Right Icon"
+            android:layout_gravity="center"
+            android:background="@color/menu"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

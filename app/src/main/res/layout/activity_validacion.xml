@@ -19,8 +19,8 @@
         android:layout_height="374dp"
         android:layout_gravity="center"
         android:src="@drawable/circle_shape1"
-        tools:layout_editor_absoluteX="-124dp"
-        tools:layout_editor_absoluteY="-115dp" />
+        tools:layout_editor_absoluteX="-129dp"
+        tools:layout_editor_absoluteY="-108dp" />
 
     <ImageView
         app:layout_constraintBottom_toBottomOf="parent"

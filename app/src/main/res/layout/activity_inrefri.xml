@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:text="@string/refrigeraci_n"
         android:textColor="@android:color/white"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,30 +50,32 @@
             android:id="@+id/textView3"
             android:layout_width="267dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
             android:layout_marginTop="28dp"
             android:text="Objetivo de Refrigeración"
-            android:textSize="17dp"
-            android:textStyle="bold" />
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="254dp"
             android:layout_height="257dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="10dp"
             android:text="@string/analiza_e_interpreta_el_funcionamiento_de_los_sistemas_de_refrigeraci_n_de_vapor_por_compresi_n_as_como_selecci_n_de_los_equipos_que_los_componen_con_el_objeto_de_determinar_sus_indicadores_fundamentales"
-            android:textSize="17dp" />
+            android:textSize="17sp" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
             android:layout_marginTop="-75dp"
             android:backgroundTint="@color/red"
             android:text="Empezar"
-            app:cornerRadius="20dp">
+            app:cornerRadius="20dp"
+            tools:ignore="HardcodedText">
 
         </Button>
 
@@ -98,7 +100,8 @@
             android:layout_weight="1"
             android:background="@color/menu"
             android:contentDescription="Left Icon"
-            android:src="@drawable/context" />
+            android:src="@drawable/context"
+            tools:ignore="HardcodedText" />
 
         <ImageButton
             android:id="@+id/iconCenter"
@@ -108,7 +111,8 @@
             android:layout_weight="1"
             android:background="@color/menu"
             android:contentDescription="Center Icon"
-            android:src="@drawable/perfil" />
+            android:src="@drawable/perfil"
+            tools:ignore="HardcodedText" />
 
         <ImageButton
             android:id="@+id/iconRight"
@@ -118,7 +122,8 @@
             android:layout_weight="1"
             android:background="@color/menu"
             android:contentDescription="Right Icon"
-            android:src="@drawable/savvy_info" />
+            android:src="@drawable/savvy_info"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 
@@ -129,6 +134,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:background="@null"
+        android:contentDescription="TODO"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_24" />

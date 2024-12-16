@@ -2,6 +2,8 @@
     <string name="app_name">SAVVY</string>
     <string name="icon_description">Icono de web</string>
     <string name="examen">EXAMEN</string>
+    <string name="refrigeraci_n">REFRIGERACIÓN</string>
+    <string name="analiza_e_interpreta_el_funcionamiento_de_los_sistemas_de_refrigeraci_n_de_vapor_por_compresi_n_as_como_selecci_n_de_los_equipos_que_los_componen_con_el_objeto_de_determinar_sus_indicadores_fundamentales">Analiza e interpreta el funcionamiento de los sistemas de refrigeración de vapor por compresión así como selección de los equipos que los componen con el objeto de determinar sus indicadores fundamentales.</string>
 
 
 </resources>

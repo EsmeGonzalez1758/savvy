@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
-    tools:ignore="MissingConstraints">
+    android:background="@color/blue">
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
         android:layout_marginTop="48dp"
         android:text="EXAMEN"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
@@ -25,9 +25,9 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
+        android:layout_marginStart="108dp"
         android:layout_marginTop="80dp"
-        android:text="AIRE ACONDICIONADO"
+        android:text="REFRIGERACIÓN"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -55,6 +55,7 @@
         android:layout_height="605dp"
         android:layout_marginTop="164dp"
         android:layout_marginEnd="16dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fondoexamen"

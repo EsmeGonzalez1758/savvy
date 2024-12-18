@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Examen"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aire acondicionado"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="48dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:background="@color/resultados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="¡Bienvenido al examen de opción múltiple!"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_person_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:text="A continuación, encontrarás una serie de preguntas diseñadas para evaluar tus conocimientos sobre el tema de Aire Acondicionado."
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            app:srcCompat="@drawable/baseline_person_24" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:text="Lee cuidadosamente cada enunciado y selecciona la opción que consideres correcta." />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_person_24" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:text="Recuerda que solo podrás elegir una respuesta por pregunta, así que tómate tu tiempo para reflexionar antes de responder."
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:text="¡Buena suerte!"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="Terminar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="782dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Resultados"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refrigeración"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="586dp"
+        android:background="@color/resultados"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="127dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="208dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_marginStart="50dp"
+            android:text="Has completado tu
+evaluación final."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="139dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="80dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/iconresultados1"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="251dp"
+            android:layout_height="98dp"
+            android:layout_marginLeft="30dp"
+            android:text="Recuerda que debes mostrarle al
+profesor tus resultados para que
+puedan ser considerados e
+implementados en tu evaluación."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="94dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/imagen2" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tú resultado es:"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="Terminar"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="752dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

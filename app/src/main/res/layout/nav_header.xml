@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueD"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="374dp"
+        android:layout_height="374dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape1"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="-170dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="336dp"
+        android:layout_height="283dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape1"
+        tools:layout_editor_absoluteX="-187dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="255dp"
+        android:layout_height="242dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape2"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="-106dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="193dp"
+        android:layout_height="211dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape2"
+        tools:layout_editor_absoluteX="-110dp"
+        tools:layout_editor_absoluteY="582dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="102dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape3"
+        tools:layout_editor_absoluteX="-50dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="125dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_shape3"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="-43dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="242dp"
+        android:layout_height="40dp"
+        android:text="Nombre de usuario"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+
+    <TextView
+        android:id="@+id/textnombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        android:text="Esmeralda Imelda Arrieta González"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="242dp"
+        android:layout_height="40dp"
+        android:text="Correo Electronico"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="298dp"
+        android:layout_height="34dp"
+        android:text="esmeraldag1758@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <ImageView
+        android:id="@+id/imagerefrigeracion"
+        android:layout_width="46dp"
+        android:layout_height="51dp"
+        android:src="@drawable/sign_out"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="824dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="132dp"
+        android:layout_height="26dp"
+        android:text="cerrar sesión"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="832dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

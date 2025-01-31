@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -11,20 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SAVVY"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".MenuActivity"
-            android:exported="false"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.SAVVY.NoActionBar" />
+            android:name=".perfil"
+            android:exported="false" />
+        <activity
+            android:name=".inicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crucigramapropiedades"
+            android:exported="false" />
+        <activity
+            android:name=".Memorama"
+            android:exported="false" />
+        <activity
+            android:name=".cascada_dobleetapa"
+            android:exported="false" />
+        <activity
+            android:name=".absorcion"
+            android:exported="false" />
         <activity
             android:name=".savvyActivity"
             android:exported="false" />
         <activity
             android:name=".contenidoextraActivity"
-            android:exported="false" />
-        <activity
-            android:name=".inicioActivity"
             android:exported="false" />
         <activity
             android:name=".apartadosActivity"
@@ -36,17 +52,8 @@
             android:name=".registroActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".loginActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>

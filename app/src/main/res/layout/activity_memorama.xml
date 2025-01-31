@@ -1,0 +1,519 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/Textsavvy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Ejercicio\nMemorama"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Timer and Start Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo: 2:00"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Empezar" />
+        </LinearLayout>
+
+        <!-- Memorama Grid (3x6) -->
+        <GridLayout
+            android:id="@+id/memoramaGrid"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignBounds"
+            android:columnCount="3"
+            android:gravity="center"
+            android:rowCount="6"
+            android:useDefaultMargins="true">
+
+            <!-- Card 1 (Imagen y texto cuando se voltee) -->
+            <FrameLayout
+                android:id="@+id/card1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen inicial -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Texto al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Condensador"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Card 2 (Imagen y texto cuando se voltee) -->
+            <FrameLayout
+                android:id="@+id/card2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen inicial -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/card_front_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_4"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Card 3 (Imagen y texto cuando se voltee) -->
+            <FrameLayout
+                android:id="@+id/card3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen inicial -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+                <!-- Texto al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Válvula"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Card 4 (Imagen en el reverso al inicio y otra imagen cuando se voltee) -->
+            <FrameLayout
+                android:id="@+id/card4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/card_front_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_4"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Card 5 (Imagen en el reverso al inicio y otra imagen cuando se voltee) -->
+            <FrameLayout
+                android:id="@+id/card5"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Condensador"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Card 6 (Imagen en el reverso al inicio y otra imagen cuando se voltee) -->
+            <FrameLayout
+                android:id="@+id/card6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <ImageView
+                    android:id="@+id/card_front_image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_6"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Card 7 (Imagen en el reverso al inicio y otra imagen cuando se voltee) -->
+            <FrameLayout
+                android:id="@+id/card7"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Condensador"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Card 8 (Imagen en el reverso al inicio y otra imagen cuando se voltee) -->
+            <FrameLayout
+                android:id="@+id/card8"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <ImageView
+                    android:id="@+id/card_front_image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_8"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Añade las cartas restantes siguiendo la misma lógica -->
+            <FrameLayout
+                android:id="@+id/card9"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Condensador"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card10"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <ImageView
+                    android:id="@+id/card_front_image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_8"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card11"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Condensador"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card12"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <ImageView
+                    android:id="@+id/card_front_image6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_8"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card13"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Condensador"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card14"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <ImageView
+                    android:id="@+id/card_front_image7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_8"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card15"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Condensador"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card16"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <ImageView
+                    android:id="@+id/card_front_image8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_8"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card17"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back17"
+                    android:layout_width="match_parent"
+                    android:layout_he   ight="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <TextView
+                    android:id="@+id/card_front_text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Condensador"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card18"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center">
+
+                <!-- Imagen de reverso -->
+                <ImageView
+                    android:id="@+id/card_back18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_back"
+                    android:visibility="visible" />
+
+                <!-- Imagen frontal al voltearse -->
+                <ImageView
+                    android:id="@+id/card_front_image9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/front_image_8"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</RelativeLayout>

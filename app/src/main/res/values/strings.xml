@@ -151,5 +151,6 @@
     <string name="image_refri">imagen refrigeracion</string>
     <string name="image_aire">imagen aire acondicionado</string>
     <string name="cerrar_sesionbutton">Cerrar sesión y salir de la aplicación</string>
+    <string name="introducir_letra" >introduce una letra</string>
 
 </resources>

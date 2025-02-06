@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="754dp"
+        android:background="@color/bluecl"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/adivina_y_gana_sin_perder_la_calma"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"/>
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tiempo_restante"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-20dp"
+            android:text="@string/_10_00"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"/>
+
+        <LinearLayout
+            android:layout_width="274dp"
+            android:layout_height="133dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="44dp"
+            android:background="@color/Adivinanza"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adivinanza"
+                android:layout_width="229dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/adivinanza"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/respuestaAanz"
+            android:layout_width="118dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#CEB4DF"
+            android:elevation="10dp"
+            android:text="@string/respepuestaA"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/respuestaBanz"
+            android:layout_width="118dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="-160dp"
+            android:background="@color/Ranz2"
+            android:elevation="10dp"
+            android:text="@string/respepuestaB"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/respuestaCanz"
+            android:layout_width="118dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/Ranz3"
+            android:elevation="10dp"
+            android:text="@string/respepuestaC"
+            android:textColor="@color/black"
+           />
+
+        <Button
+            android:id="@+id/respuestaDanz"
+            android:layout_width="118dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="-160dp"
+            android:background="@color/Ranz4"
+            android:elevation="10dp"
+            android:text="@string/respepuestaD"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/botonanz"
+            android:layout_width="113dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/reto_aceptado"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+           />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

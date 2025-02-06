@@ -20,8 +20,23 @@
     <color name="menu">#80BAF3</color>
     <color name="despegable">#6A78C7</color>
     <color name="temario">#8186D5</color>
-    <color name="temas">#DDE9F8</color>
+    <color name="temas1">#DDE9F8</color>
     <color name="exam1">#7175C6</color>
     <color name="emam2">#F2F7FB</color>
     <color name="resultados">#A2A6D9</color>
+    <color name="tema">#A3C7ED</color>
+    <color name="Sopa">#BCC0FF</color>
+    <color name="Sopa1">#4A77B2</color>
+
+    <color name="TablaP">#b2a8dd</color>
+    <color name="TablaP1">#cdc8ea</color>
+    <color name="TablaP2">#e3e0f4</color>
+    <color name="TablaP3">#efeef9</color>
+    <color name="TablaP4">#f7f6fc</color>
+
+    <color name="Adivinanza">#769D4E</color>
+    <color name="Ranz1">#CEB4DF</color>
+    <color name="Ranz2">#DD65BF</color>
+    <color name="Ranz3">#5876C0</color>
+    <color name="Ranz4">#DD8765</color>
 </resources>

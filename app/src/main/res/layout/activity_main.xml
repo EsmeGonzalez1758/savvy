@@ -5,6 +5,38 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:layout_width="291dp"
+        android:layout_height="614dp"
+        android:orientation="horizontal"
+        android:padding="11dp"
+        android:background="@color/bluecl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="224dp"
+        tools:ignore="MissingConstraints">
+
+        <ListView
+            android:id="@+id/leftColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E0E0E0"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp" />
+
+        <ListView
+            android:id="@+id/rightColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E0E0E0"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

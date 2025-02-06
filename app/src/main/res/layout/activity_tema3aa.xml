@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="380dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="64dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="266dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="@string/proceso_de_calentamiento_sensible_tema"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"/>
+
+        <VideoView
+            android:id="@+id/videoView4"
+            android:layout_width="279dp"
+            android:layout_height="182dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:elevation="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="200dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="472dp"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="276dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/se_trata_de_una_operaci_n_muy_sencilla_que_consiste_en_calentar_el_aire_hasta_alcanzar_la_temperatura_que_se_desee_sin_modificar_el_contenido_de_humedad_es_decir_sin_quitar_ni_a_adir_agua"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

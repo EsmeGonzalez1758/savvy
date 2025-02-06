@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="380dp"
+        android:background="@color/tema"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="64dp">
+
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="266dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="@string/proceso_de_enfriamiento_deshumificaci_n"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2" />
+
+        <VideoView
+            android:id="@+id/videoView5"
+            android:layout_width="279dp"
+            android:layout_height="182dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:elevation="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="220dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="472dp"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="276dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/si_el_aire_pasa_a_trav_s_de_una_superficie_o_a_trav_s_de_un_rociador_de_agua_cuya_temperatura_sea_menor_por_el_punto_de_roc_o_del_aire_se_condensar_parte_de_la_humedad_del_aire_y_la_mezcla_se_enfriar_simult_neamente"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue">
+    android:background="@color/blue"
+    >
 
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="380dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="64dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="266dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/tablas_y_cartas_psicrometricas"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:contentDescription="@string/titulo_de_tema_1"
+            />
+
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="279dp"
+            android:layout_height="182dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:elevation="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="170dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="472dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="276dp"
+            android:layout_height="138dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:text="@string/imagina_una_hoja_de_c_lculo_gr_fica_que_te_permite_ver_c_mo_se_comporta_el_aire_h_medo_cuando_cambia_su_temperatura_o_humedad_es_como_un_mapa_que_te_ayuda_a_entender"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="75dp"
+        android:background="@color/bluecl"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="683dp"
+        android:elevation="10dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/cu_nta_humedad_tiene_el_aire"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="130dp"
+        android:background="@color/temas"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="792dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:text="@string/a_qu_temperatura_se_formar_el_roc_o_cuando_el_aire_ya_no_puede_contener_m_s_humedad"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:lineSpacingExtra="3dp"
+            android:gravity="end"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:background="@color/Sopa1"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="957dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cu_nta_energ_a_calor_tiene_el_aire"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textStyle="italic"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="100dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1089dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conceptos_clave_que_ver_n_en_la_carta_psicrom_trica"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="25sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="75dp"
+        android:background="@color/TablaP"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1232dp"
+        tools:ignore="MissingConstraints"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_temperatura_de_bulbo_seco"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:background="@color/TablaP1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1343dp"
+        tools:ignore="MissingConstraints"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2_temperatura_de_bulbo_h_medo"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="75dp"
+        android:background="@color/TablaP2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1453dp"
+        android:elevation="10dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_humedad_relativa"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:background="@color/TablaP3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1564dp"
+        tools:ignore="MissingConstraints"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_punto_de_roc_o"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/TablaP4"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_entalp_a"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="25sp"/>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

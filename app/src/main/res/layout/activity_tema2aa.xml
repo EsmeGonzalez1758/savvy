@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="380dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="64dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="266dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="@string/proceso_de_enfriamiento_sensible_tema"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            />
+
+        <VideoView
+            android:id="@+id/videoView3"
+            android:layout_width="279dp"
+            android:layout_height="182dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:elevation="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="320dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="472dp"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:text="@string/en_los_procesos_comunes_nos_referimos_a_los_procesos_de_enfriamiento_sensible_o_calefacci_n_sensible_a_la_cantidad_que_disminuimos_o_aumentamos_a_la_temperatura_de_bulbo_seco_causando_que_la_humedad_relativa_y_temperatura_de_bulbo_h_medo_var_en_tambi_n_sin_embrago_la_humedad_absoluta_permanecer_constante"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:lineSpacingExtra="4dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

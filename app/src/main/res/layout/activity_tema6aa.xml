@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="380dp"
+        android:background="@color/tema"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="61dp">
+
+        <TextView
+            android:layout_width="335dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1"
+            android:text="@string/proceso_de_calentamientodeshumidificaci_n"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/videoView7"
+            android:layout_width="279dp"
+            android:layout_height="182dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:elevation="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="230dp"
+        android:background="@color/tema"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="472dp"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="278dp"
+            android:layout_height="194dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/su_definici_n_es_eliminar_calor_del_aire_esto_es_condensar_vapor_de_agua_de_ste_la_deshumidificaci_n_pura_no_es_un_proceso_que_se_use_con_frecuencia_y_s_lo_se_le_necesita_en_acondicionamiento_especializado_de_aire_industrial"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

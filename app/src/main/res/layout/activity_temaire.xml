@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="1099dp"
+    android:layout_height="1200dp"
     android:background="@color/blue">
 
 
@@ -20,7 +20,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteY="41dp" />
+        tools:layout_editor_absoluteY="41dp"
+        android:elevation="10dp"/>
 
     <TextView
         android:id="@+id/textView6"
@@ -33,196 +34,286 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteY="80dp" />
+        tools:layout_editor_absoluteY="80dp"
+        android:elevation="10dp"/>
 
     <LinearLayout
         android:id="@+id/contenido"
-        android:layout_width="398dp"
-        android:layout_height="845dp"
+        android:layout_width="388dp"
+        android:layout_height="980dp"
         android:background="@color/temario"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="132dp">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="341dp"
-            android:layout_height="47dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="@color/temas"
-            android:gravity="center_vertical|start"
-            android:text="Tablas y cartas psicométricas."
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,RtlCompat" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="346dp"
-            android:layout_height="53dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="19dp"
-            android:backgroundTint="@color/temas"
-            android:gravity="center_vertical|start"
-            android:text="Proceso de enfriamiento sensible"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="346dp"
-            android:layout_height="78dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="19dp"
-            android:backgroundTint="@color/temas"
-            android:gravity="center_vertical|start"
-            android:text="Proceso de calentamiento sensible"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="346dp"
-            android:layout_height="78dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="19dp"
-            android:backgroundTint="@color/temas"
-            android:gravity="center_vertical|start"
-            android:text="Proceso de enfriamiento deshumidificación"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="346dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="19dp"
-            android:backgroundTint="@color/temas"
-            android:gravity="center_vertical|start"
-            android:text="Proceso de enfriamiento-humidificación"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="346dp"
-            android:layout_height="87dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="19dp"
-            android:backgroundTint="@color/temas"
-            android:gravity="center_vertical|start"
-            android:text="Proceso de calentamientodeshumidificación"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="346dp"
-            android:layout_height="87dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="19dp"
-            android:backgroundTint="@color/temas"
-            android:gravity="center_vertical|start"
-            android:text="Proceso de calentamientohumidificación"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="346dp"
-            android:layout_height="53dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="19dp"
-            android:backgroundTint="@color/temas"
-            android:text="Cargas termicas"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="346dp"
-            android:layout_height="53dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="19dp"
-            android:backgroundTint="@color/temas"
-            android:text="Evaluación final"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="32dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
-    </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/menu"
-        android:layout_width="384dp"
-        android:layout_height="60dp"
-        android:background="@drawable/menu"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="45dp">
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="147dp">
 
-    <ImageButton
-        android:id="@+id/iconLeft"
-        android:layout_width="371dp"
-        android:layout_height="55dp"
-        android:layout_weight="1"
-        android:src="@drawable/context"
-        android:contentDescription="Left Icon"
-        android:layout_gravity="center"
-        android:background="@color/menu"
-        tools:ignore="HardcodedText" />
 
-        <ImageButton
-            android:id="@+id/iconCenter"
-            android:layout_width="371dp"
+        <LinearLayout
+            android:layout_width="303dp"
             android:layout_height="60dp"
-            android:layout_weight="1"
-            android:src="@drawable/perfil"
-            android:contentDescription="Center Icon"
-            android:layout_gravity="center"
-            android:background="@color/menu"
-            tools:ignore="HardcodedText" />
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="47dp"
+            android:orientation="vertical"
+            android:background="@color/temas"
+            android:elevation="50dp"
+            >
 
-        <ImageButton
-            android:id="@+id/iconRight"
-            android:layout_width="371dp"
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/tablas_y_cartas_psicom_tricas"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="-25dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/actividades_habilitadas"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/flechaAbajo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="303dp"
             android:layout_height="70dp"
-            android:layout_weight="1"
-            android:src="@drawable/savvy_info"
-            android:contentDescription="Right Icon"
-            android:layout_gravity="center"
-            android:background="@color/menu"
-            tools:ignore="HardcodedText" />
+            android:layout_marginLeft="40dp"
+            android:background="@color/temas"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:elevation="50dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/proceso_de_n_enfriamiento_sensible"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="-35dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/flechaAbajo"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/temas"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:elevation="50dp">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/proceso_de_ncalentamiento_sensible"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="-35dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/flechaAbajo"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/temas"
+            android:layout_marginTop="30dp"
+            android:elevation="50dp">
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/proceso_de_enfriamiento_nde_humificaci_n"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="65sp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/flechaAbajo"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/temas">
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/proceso_de_nenfriamiento_humidificaci_n"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/flechaAbajo"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/temas"
+            android:layout_marginTop="30dp"
+            android:elevation="50dp">
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/proceso_de_ncalentamientohumidificaci_n"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Actividades habilitadas tem seis"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/flechaAbajo"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/temas"
+            android:layout_marginTop="30dp"
+            android:elevation="50dp">
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/proceso_de_ncalentamientodeshuminificaci_n"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="32dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="05dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/flechaAbajo"
+                tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/temas"
+            android:layout_marginTop="30dp"
+            android:elevation="50dp">
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:text="@string/calculo_de_cargas_termicas"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/temas"
+            android:layout_marginTop="30dp"
+            android:elevation="50dp">
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:text="@string/evaluaci_n_final"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="95dp"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 

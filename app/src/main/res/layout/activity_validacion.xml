@@ -1,100 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blueD"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".validacionActivity">
+    tools:context=".validacionActivity"
+    android:id="@+id/validacion">
 
     <ImageView
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/circulo1"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:src="@drawable/circulos"
+        android:contentDescription="@string/trescirculos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="374dp"
-        android:layout_height="374dp"
-        android:layout_gravity="center"
-        android:src="@drawable/circle_shape1"
-        tools:layout_editor_absoluteX="-129dp"
-        tools:layout_editor_absoluteY="-108dp" />
+        app:layout_constraintEnd_toStartOf="@+id/circulo2"
+        app:layout_constraintBottom_toTopOf="@+id/mensaje"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginTop="-300dp"/>
 
     <ImageView
+        android:id="@+id/circulo2"
+        android:layout_width="320dp"
+        android:layout_height="420dp"
+        android:src="@drawable/circulos"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/trescirculos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="374dp"
-        android:layout_height="374dp"
-        android:layout_gravity="center"
-        android:src="@drawable/circle_shape1"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="631dp" />
-
-    <ImageView
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:src="@drawable/circle_shape2"
-        tools:layout_editor_absoluteX="-97dp"
-        tools:layout_editor_absoluteY="-89dp" />
-
-    <ImageView
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:src="@drawable/circle_shape2"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="676dp" />
-
-    <ImageView
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:src="@drawable/circle_shape3"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="756dp" />
-
-    <ImageView
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:src="@drawable/circle_shape3"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="-15dp" />
+        app:layout_constraintStart_toEndOf="@+id/circulo1"
+        app:layout_constraintTop_toBottomOf="@+id/mensaje"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="-90dp"
+        android:layout_marginTop="300dp" />
 
     <TextView
         android:id="@+id/mensaje"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registro Exitoso"
-        android:textAlignment="center"
+        android:text="@string/exitoso"
         android:textColor="@color/white"
         android:textSize="36sp"
+        android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="286dp" />
-
-
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

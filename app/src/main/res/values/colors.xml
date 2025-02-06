@@ -14,6 +14,7 @@
     <color name="seccion">#FCF3F7</color>
     <color name="contenido">#FBE8F1</color>
     <color name="perfil">#F9D1E4</color>
+    <color name="gray"> #9b9b9b</color>
     <color name="apartados">#F5ACCD</color>
     <color name="temas">#ED79AB</color>
     <color name="examen">#E14181</color>

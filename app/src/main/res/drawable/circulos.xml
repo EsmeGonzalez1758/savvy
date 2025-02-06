@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Círculo Grande -->
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size android:width="100dp" android:height="100dp"/> <!-- Tamaño del círculo grande -->
+            <solid android:color="#8484D3"/> <!-- Color del círculo grande -->
+        </shape>
+    </item>
+
+    <!-- Círculo Mediano (más grande que el grande y centrado) -->
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size android:width="80dp" android:height="80dp"/> <!-- Tamaño del círculo mediano -->
+            <solid android:color="#C8C5F9"/> <!-- Color del círculo mediano -->
+        </shape>
+    </item>
+
+    <!-- Círculo Chico (centrado) -->
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size android:width="50dp" android:height="50dp"/> <!-- Tamaño del círculo chico -->
+            <solid android:color="#635EC3"/> <!-- Color del círculo chico -->
+        </shape>
+    </item>
+
+</layer-list>
+
+
+
+
+
